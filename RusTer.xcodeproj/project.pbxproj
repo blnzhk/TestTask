@@ -1,0 +1,567 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC0E66922A9BA378002C4533 /* GetTotalLossesIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E66912A9BA378002C4533 /* GetTotalLossesIteractor.swift */; };
+		BC0E66942A9BA3A2002C4533 /* GetCurrentLossesIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E66932A9BA3A2002C4533 /* GetCurrentLossesIteractor.swift */; };
+		BC0E66962A9BA484002C4533 /* DecodedDataExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E66952A9BA484002C4533 /* DecodedDataExtension.swift */; };
+		BC0E66982A9BA805002C4533 /* TotalLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E66972A9BA805002C4533 /* TotalLosses.swift */; };
+		BC0E669A2A9BB964002C4533 /* TotalLossesMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E66992A9BB964002C4533 /* TotalLossesMapper.swift */; };
+		BC0E669C2A9BCE6E002C4533 /* DetailLossesItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E669B2A9BCE6E002C4533 /* DetailLossesItem.swift */; };
+		BC0E669E2A9BD7C7002C4533 /* TotalLossExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E669D2A9BD7C7002C4533 /* TotalLossExtension.swift */; };
+		BC0E66A02A9C03A3002C4533 /* GetEquipmentLossesIteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E669F2A9C03A3002C4533 /* GetEquipmentLossesIteractor.swift */; };
+		BC1A90232A9B53AA005527F2 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC1A90222A9B53AA005527F2 /* DateFormatter.swift */; };
+		BC256B552A98EA2200DBE7EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B542A98EA2200DBE7EF /* AppDelegate.swift */; };
+		BC256B572A98EA2200DBE7EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B562A98EA2200DBE7EF /* SceneDelegate.swift */; };
+		BC256B5C2A98EA2200DBE7EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC256B5A2A98EA2200DBE7EF /* Main.storyboard */; };
+		BC256B5E2A98EA2400DBE7EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC256B5D2A98EA2400DBE7EF /* Assets.xcassets */; };
+		BC256B612A98EA2400DBE7EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC256B5F2A98EA2400DBE7EF /* LaunchScreen.storyboard */; };
+		BC256B692A990B2B00DBE7EF /* rus_losses_equipment.json in Resources */ = {isa = PBXBuildFile; fileRef = BC256B682A990B2B00DBE7EF /* rus_losses_equipment.json */; };
+		BC256B6B2A990B8000DBE7EF /* rus_losses_equipment_oryx.json in Resources */ = {isa = PBXBuildFile; fileRef = BC256B6A2A990B8000DBE7EF /* rus_losses_equipment_oryx.json */; };
+		BC256B6D2A990BA500DBE7EF /* rus_losses_personnel.json in Resources */ = {isa = PBXBuildFile; fileRef = BC256B6C2A990BA500DBE7EF /* rus_losses_personnel.json */; };
+		BC256B722A994E3400DBE7EF /* PersonalLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B712A994E3400DBE7EF /* PersonalLosses.swift */; };
+		BC256B742A994E5600DBE7EF /* EquipmentLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B732A994E5600DBE7EF /* EquipmentLosses.swift */; };
+		BC256B762A994E9000DBE7EF /* TotalEquipmentLosses.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B752A994E9000DBE7EF /* TotalEquipmentLosses.swift */; };
+		BC256B792A9958C300DBE7EF /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B782A9958C300DBE7EF /* DataProvider.swift */; };
+		BC256B7F2A9A317300DBE7EF /* CurrentLossesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B7E2A9A317300DBE7EF /* CurrentLossesView.swift */; };
+		BC256B812A9A318800DBE7EF /* CurrentLossesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B802A9A318800DBE7EF /* CurrentLossesController.swift */; };
+		BC256B832A9A34D200DBE7EF /* CurrentLossesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B822A9A34D200DBE7EF /* CurrentLossesCollectionViewCell.swift */; };
+		BC256B862A9A58F600DBE7EF /* LossesListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B852A9A58F600DBE7EF /* LossesListController.swift */; };
+		BC256B882A9A591600DBE7EF /* LossesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B872A9A591500DBE7EF /* LossesListView.swift */; };
+		BC256B8A2A9A593C00DBE7EF /* LossesListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B892A9A593C00DBE7EF /* LossesListTableViewCell.swift */; };
+		BC256B942A9A9D8900DBE7EF /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC256B932A9A9D8900DBE7EF /* Detail.storyboard */; };
+		BC256B962A9A9DB200DBE7EF /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B952A9A9DB200DBE7EF /* DetailController.swift */; };
+		BC256B982A9A9DCC00DBE7EF /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B972A9A9DCC00DBE7EF /* DetailView.swift */; };
+		BC256B9A2A9A9DF700DBE7EF /* DetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC256B992A9A9DF700DBE7EF /* DetailTableViewCell.swift */; };
+		BCA6AFB12A9C2DF100AA1A06 /* AppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCA6AFB02A9C2DF100AA1A06 /* AppConstants.swift */; };
+		BCDAA6B32A9C26EB00C69865 /* TotalEquipmentLossesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDAA6B02A9C26EA00C69865 /* TotalEquipmentLossesView.swift */; };
+		BCDAA6B42A9C26EB00C69865 /* TotalEquipmentLossesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDAA6B12A9C26EA00C69865 /* TotalEquipmentLossesController.swift */; };
+		BCDAA6B52A9C26EB00C69865 /* TotalEquipmentLossesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCDAA6B22A9C26EA00C69865 /* TotalEquipmentLossesTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BC0E66912A9BA378002C4533 /* GetTotalLossesIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetTotalLossesIteractor.swift; sourceTree = "<group>"; };
+		BC0E66932A9BA3A2002C4533 /* GetCurrentLossesIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCurrentLossesIteractor.swift; sourceTree = "<group>"; };
+		BC0E66952A9BA484002C4533 /* DecodedDataExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodedDataExtension.swift; sourceTree = "<group>"; };
+		BC0E66972A9BA805002C4533 /* TotalLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalLosses.swift; sourceTree = "<group>"; };
+		BC0E66992A9BB964002C4533 /* TotalLossesMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalLossesMapper.swift; sourceTree = "<group>"; };
+		BC0E669B2A9BCE6E002C4533 /* DetailLossesItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailLossesItem.swift; sourceTree = "<group>"; };
+		BC0E669D2A9BD7C7002C4533 /* TotalLossExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalLossExtension.swift; sourceTree = "<group>"; };
+		BC0E669F2A9C03A3002C4533 /* GetEquipmentLossesIteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetEquipmentLossesIteractor.swift; sourceTree = "<group>"; };
+		BC1A90222A9B53AA005527F2 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		BC256B512A98EA2200DBE7EF /* RusTer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RusTer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC256B542A98EA2200DBE7EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC256B562A98EA2200DBE7EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BC256B5B2A98EA2200DBE7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC256B5D2A98EA2400DBE7EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC256B602A98EA2400DBE7EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC256B622A98EA2400DBE7EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC256B682A990B2B00DBE7EF /* rus_losses_equipment.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rus_losses_equipment.json; sourceTree = "<group>"; };
+		BC256B6A2A990B8000DBE7EF /* rus_losses_equipment_oryx.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rus_losses_equipment_oryx.json; sourceTree = "<group>"; };
+		BC256B6C2A990BA500DBE7EF /* rus_losses_personnel.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = rus_losses_personnel.json; sourceTree = "<group>"; };
+		BC256B712A994E3400DBE7EF /* PersonalLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalLosses.swift; sourceTree = "<group>"; };
+		BC256B732A994E5600DBE7EF /* EquipmentLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLosses.swift; sourceTree = "<group>"; };
+		BC256B752A994E9000DBE7EF /* TotalEquipmentLosses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalEquipmentLosses.swift; sourceTree = "<group>"; };
+		BC256B782A9958C300DBE7EF /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		BC256B7E2A9A317300DBE7EF /* CurrentLossesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLossesView.swift; sourceTree = "<group>"; };
+		BC256B802A9A318800DBE7EF /* CurrentLossesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLossesController.swift; sourceTree = "<group>"; };
+		BC256B822A9A34D200DBE7EF /* CurrentLossesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentLossesCollectionViewCell.swift; sourceTree = "<group>"; };
+		BC256B852A9A58F600DBE7EF /* LossesListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesListController.swift; sourceTree = "<group>"; };
+		BC256B872A9A591500DBE7EF /* LossesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesListView.swift; sourceTree = "<group>"; };
+		BC256B892A9A593C00DBE7EF /* LossesListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LossesListTableViewCell.swift; sourceTree = "<group>"; };
+		BC256B932A9A9D8900DBE7EF /* Detail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		BC256B952A9A9DB200DBE7EF /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		BC256B972A9A9DCC00DBE7EF /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		BC256B992A9A9DF700DBE7EF /* DetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTableViewCell.swift; sourceTree = "<group>"; };
+		BCA6AFB02A9C2DF100AA1A06 /* AppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstants.swift; sourceTree = "<group>"; };
+		BCDAA6B02A9C26EA00C69865 /* TotalEquipmentLossesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TotalEquipmentLossesView.swift; path = TotalEquipmentLosses/TotalEquipmentLossesView.swift; sourceTree = "<group>"; };
+		BCDAA6B12A9C26EA00C69865 /* TotalEquipmentLossesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TotalEquipmentLossesController.swift; path = TotalEquipmentLosses/TotalEquipmentLossesController.swift; sourceTree = "<group>"; };
+		BCDAA6B22A9C26EA00C69865 /* TotalEquipmentLossesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TotalEquipmentLossesTableViewCell.swift; path = TotalEquipmentLosses/TotalEquipmentLossesTableViewCell.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC256B4E2A98EA2200DBE7EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC0E668E2A9BA339002C4533 /* Iteractors */ = {
+			isa = PBXGroup;
+			children = (
+				BC0E66912A9BA378002C4533 /* GetTotalLossesIteractor.swift */,
+				BC0E66932A9BA3A2002C4533 /* GetCurrentLossesIteractor.swift */,
+				BC0E669F2A9C03A3002C4533 /* GetEquipmentLossesIteractor.swift */,
+			);
+			path = Iteractors;
+			sourceTree = "<group>";
+		};
+		BC256B482A98EA2200DBE7EF = {
+			isa = PBXGroup;
+			children = (
+				BC256B532A98EA2200DBE7EF /* RusTer */,
+				BC256B522A98EA2200DBE7EF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC256B522A98EA2200DBE7EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B512A98EA2200DBE7EF /* RusTer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC256B532A98EA2200DBE7EF /* RusTer */ = {
+			isa = PBXGroup;
+			children = (
+				BCA612242A9B7703006145C4 /* Extensions */,
+				BC256B922A9A9D6C00DBE7EF /* Detail */,
+				BC256B8B2A9A98A100DBE7EF /* TotalEquipmentLosses */,
+				BC256B842A9A589000DBE7EF /* LossesList */,
+				BC256B7D2A9A313C00DBE7EF /* CurrentLosses */,
+				BC256B7A2A9958DE00DBE7EF /* Basic */,
+				BC256B6E2A990BAE00DBE7EF /* Data */,
+				BC256B5A2A98EA2200DBE7EF /* Main.storyboard */,
+				BC256B5D2A98EA2400DBE7EF /* Assets.xcassets */,
+				BC256B5F2A98EA2400DBE7EF /* LaunchScreen.storyboard */,
+				BC256B622A98EA2400DBE7EF /* Info.plist */,
+			);
+			path = RusTer;
+			sourceTree = "<group>";
+		};
+		BC256B6E2A990BAE00DBE7EF /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				BC0E66992A9BB964002C4533 /* TotalLossesMapper.swift */,
+				BC0E668E2A9BA339002C4533 /* Iteractors */,
+				BC256B772A9958AE00DBE7EF /* Provider */,
+				BC256B702A994DC400DBE7EF /* Entities */,
+				BC256B6F2A994DAB00DBE7EF /* Json */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		BC256B6F2A994DAB00DBE7EF /* Json */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B6C2A990BA500DBE7EF /* rus_losses_personnel.json */,
+				BC256B6A2A990B8000DBE7EF /* rus_losses_equipment_oryx.json */,
+				BC256B682A990B2B00DBE7EF /* rus_losses_equipment.json */,
+			);
+			path = Json;
+			sourceTree = "<group>";
+		};
+		BC256B702A994DC400DBE7EF /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B712A994E3400DBE7EF /* PersonalLosses.swift */,
+				BC256B732A994E5600DBE7EF /* EquipmentLosses.swift */,
+				BC256B752A994E9000DBE7EF /* TotalEquipmentLosses.swift */,
+				BC0E66972A9BA805002C4533 /* TotalLosses.swift */,
+				BC0E669B2A9BCE6E002C4533 /* DetailLossesItem.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		BC256B772A9958AE00DBE7EF /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B782A9958C300DBE7EF /* DataProvider.swift */,
+			);
+			path = Provider;
+			sourceTree = "<group>";
+		};
+		BC256B7A2A9958DE00DBE7EF /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				BCA6AFB02A9C2DF100AA1A06 /* AppConstants.swift */,
+				BC256B562A98EA2200DBE7EF /* SceneDelegate.swift */,
+				BC256B542A98EA2200DBE7EF /* AppDelegate.swift */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		BC256B7D2A9A313C00DBE7EF /* CurrentLosses */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B7E2A9A317300DBE7EF /* CurrentLossesView.swift */,
+				BC256B802A9A318800DBE7EF /* CurrentLossesController.swift */,
+				BC256B822A9A34D200DBE7EF /* CurrentLossesCollectionViewCell.swift */,
+			);
+			path = CurrentLosses;
+			sourceTree = "<group>";
+		};
+		BC256B842A9A589000DBE7EF /* LossesList */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B852A9A58F600DBE7EF /* LossesListController.swift */,
+				BC256B872A9A591500DBE7EF /* LossesListView.swift */,
+				BC256B892A9A593C00DBE7EF /* LossesListTableViewCell.swift */,
+			);
+			path = LossesList;
+			sourceTree = "<group>";
+		};
+		BC256B8B2A9A98A100DBE7EF /* TotalEquipmentLosses */ = {
+			isa = PBXGroup;
+			children = (
+				BCDAA6B12A9C26EA00C69865 /* TotalEquipmentLossesController.swift */,
+				BCDAA6B22A9C26EA00C69865 /* TotalEquipmentLossesTableViewCell.swift */,
+				BCDAA6B02A9C26EA00C69865 /* TotalEquipmentLossesView.swift */,
+			);
+			name = TotalEquipmentLosses;
+			sourceTree = "<group>";
+		};
+		BC256B922A9A9D6C00DBE7EF /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				BC256B932A9A9D8900DBE7EF /* Detail.storyboard */,
+				BC256B952A9A9DB200DBE7EF /* DetailController.swift */,
+				BC256B972A9A9DCC00DBE7EF /* DetailView.swift */,
+				BC256B992A9A9DF700DBE7EF /* DetailTableViewCell.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		BCA612242A9B7703006145C4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BC1A90222A9B53AA005527F2 /* DateFormatter.swift */,
+				BC0E66952A9BA484002C4533 /* DecodedDataExtension.swift */,
+				BC0E669D2A9BD7C7002C4533 /* TotalLossExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC256B502A98EA2200DBE7EF /* RusTer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC256B652A98EA2400DBE7EF /* Build configuration list for PBXNativeTarget "RusTer" */;
+			buildPhases = (
+				BC256B4D2A98EA2200DBE7EF /* Sources */,
+				BC256B4E2A98EA2200DBE7EF /* Frameworks */,
+				BC256B4F2A98EA2200DBE7EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RusTer;
+			productName = RusTer;
+			productReference = BC256B512A98EA2200DBE7EF /* RusTer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC256B492A98EA2200DBE7EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1420;
+				LastUpgradeCheck = 1420;
+				TargetAttributes = {
+					BC256B502A98EA2200DBE7EF = {
+						CreatedOnToolsVersion = 14.2;
+					};
+				};
+			};
+			buildConfigurationList = BC256B4C2A98EA2200DBE7EF /* Build configuration list for PBXProject "RusTer" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC256B482A98EA2200DBE7EF;
+			productRefGroup = BC256B522A98EA2200DBE7EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC256B502A98EA2200DBE7EF /* RusTer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC256B4F2A98EA2200DBE7EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC256B612A98EA2400DBE7EF /* LaunchScreen.storyboard in Resources */,
+				BC256B6B2A990B8000DBE7EF /* rus_losses_equipment_oryx.json in Resources */,
+				BC256B6D2A990BA500DBE7EF /* rus_losses_personnel.json in Resources */,
+				BC256B5E2A98EA2400DBE7EF /* Assets.xcassets in Resources */,
+				BC256B942A9A9D8900DBE7EF /* Detail.storyboard in Resources */,
+				BC256B692A990B2B00DBE7EF /* rus_losses_equipment.json in Resources */,
+				BC256B5C2A98EA2200DBE7EF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC256B4D2A98EA2200DBE7EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC0E669C2A9BCE6E002C4533 /* DetailLossesItem.swift in Sources */,
+				BC0E66A02A9C03A3002C4533 /* GetEquipmentLossesIteractor.swift in Sources */,
+				BC256B812A9A318800DBE7EF /* CurrentLossesController.swift in Sources */,
+				BC0E66982A9BA805002C4533 /* TotalLosses.swift in Sources */,
+				BC256B982A9A9DCC00DBE7EF /* DetailView.swift in Sources */,
+				BC0E66942A9BA3A2002C4533 /* GetCurrentLossesIteractor.swift in Sources */,
+				BC0E669A2A9BB964002C4533 /* TotalLossesMapper.swift in Sources */,
+				BC256B792A9958C300DBE7EF /* DataProvider.swift in Sources */,
+				BC0E66962A9BA484002C4533 /* DecodedDataExtension.swift in Sources */,
+				BC256B882A9A591600DBE7EF /* LossesListView.swift in Sources */,
+				BCDAA6B52A9C26EB00C69865 /* TotalEquipmentLossesTableViewCell.swift in Sources */,
+				BCA6AFB12A9C2DF100AA1A06 /* AppConstants.swift in Sources */,
+				BC0E66922A9BA378002C4533 /* GetTotalLossesIteractor.swift in Sources */,
+				BC1A90232A9B53AA005527F2 /* DateFormatter.swift in Sources */,
+				BCDAA6B32A9C26EB00C69865 /* TotalEquipmentLossesView.swift in Sources */,
+				BC256B962A9A9DB200DBE7EF /* DetailController.swift in Sources */,
+				BC256B862A9A58F600DBE7EF /* LossesListController.swift in Sources */,
+				BC256B722A994E3400DBE7EF /* PersonalLosses.swift in Sources */,
+				BC256B762A994E9000DBE7EF /* TotalEquipmentLosses.swift in Sources */,
+				BC256B742A994E5600DBE7EF /* EquipmentLosses.swift in Sources */,
+				BC256B552A98EA2200DBE7EF /* AppDelegate.swift in Sources */,
+				BCDAA6B42A9C26EB00C69865 /* TotalEquipmentLossesController.swift in Sources */,
+				BC256B8A2A9A593C00DBE7EF /* LossesListTableViewCell.swift in Sources */,
+				BC256B7F2A9A317300DBE7EF /* CurrentLossesView.swift in Sources */,
+				BC256B832A9A34D200DBE7EF /* CurrentLossesCollectionViewCell.swift in Sources */,
+				BC0E669E2A9BD7C7002C4533 /* TotalLossExtension.swift in Sources */,
+				BC256B572A98EA2200DBE7EF /* SceneDelegate.swift in Sources */,
+				BC256B9A2A9A9DF700DBE7EF /* DetailTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BC256B5A2A98EA2200DBE7EF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC256B5B2A98EA2200DBE7EF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC256B5F2A98EA2400DBE7EF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC256B602A98EA2400DBE7EF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC256B632A98EA2400DBE7EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BC256B642A98EA2400DBE7EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC256B662A98EA2400DBE7EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NM7ZH5ZX9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RusTer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlinaBilonozhko.RusTer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC256B672A98EA2400DBE7EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = NM7ZH5ZX9H;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RusTer/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.AlinaBilonozhko.RusTer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC256B4C2A98EA2200DBE7EF /* Build configuration list for PBXProject "RusTer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC256B632A98EA2400DBE7EF /* Debug */,
+				BC256B642A98EA2400DBE7EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC256B652A98EA2400DBE7EF /* Build configuration list for PBXNativeTarget "RusTer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC256B662A98EA2400DBE7EF /* Debug */,
+				BC256B672A98EA2400DBE7EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC256B492A98EA2200DBE7EF /* Project object */;
+}
